@@ -1,8 +1,16 @@
 import React from 'react'
+import JumbButton from '../components/JumbButton'
+import SearchField from '../components/SearchField'
+import Images from '../components/Images'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <JumbButton>
+        <SearchField/>
+      </JumbButton>
+      <Images/>
+    </>
   )
 }
 
