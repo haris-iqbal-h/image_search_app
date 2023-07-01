@@ -1,6 +1,6 @@
 import React from 'react'
 
-const JumbButton = ({children}) => {
+const Jumbutron = ({children}) => {
     return (
         <div className='bg-gray-900 flex items-center py-10'>
             <div className="max-w-md mx-auto w-full">
@@ -13,4 +13,4 @@ const JumbButton = ({children}) => {
     )
 }
 
-export default JumbButton
+export default Jumbutron

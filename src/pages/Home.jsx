@@ -1,15 +1,23 @@
 import React from 'react'
-import JumbButton from '../components/JumbButton'
+import Jumbutron from '../components/Jumbutron'
 import SearchField from '../components/SearchField'
 import Images from '../components/Images'
+import useAxios from '../hooks/useAxios'
+
 
 const Home = () => {
-  return (
+
+  const {data,error,isLoading,fetchData}=
+    useAxios(`/search/photos?page=1&query=office&client_id=xhoxxbQyPpiWJYoXu7u418Vf2ol10sPATvhPJPYFQfw`)
+  
+    console.log(data);
+  
+    return (
     <>
-      <JumbButton>
+      <Jumbutron>
         <SearchField/>
-      </JumbButton>
-      <Images/>
+      </Jumbutron>
+      <Images />
     </>
   )
 }
